@@ -66,10 +66,10 @@ object hartos inherits Persona{
 	 method pasar(objeto,persona){
 	
 		const lista = [objetosCercanos.all()]	
-		objetosCercanos.all({unObjeto => objetosCercanos.remove(unObjeto)})
-		objetosCercanos.add().all(persona.objetosCernanos())
-		persona.abjetosCercanos().remove().all()
-		persona.objetosCercanos().add().all(lista)
+		objetosCercanos.removeAll()
+		objetosCercanos.addAll(persona.objetosCernanos())
+		persona.abjetosCercanos().removeAll()
+		persona.objetosCercanos().addAll(lista)
 	}
 }
 object buenaGente inherits Persona{
